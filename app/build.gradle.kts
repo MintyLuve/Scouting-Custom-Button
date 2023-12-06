@@ -4,12 +4,13 @@ plugins {
 
 android {
     namespace = "com.fro.scouting_custom_buttons"
-    compileSdk = 33
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "com.fro.scouting_custom_buttons"
         minSdk = 24
-        targetSdk = 33
+        //noinspection EditedTargetSdkVersion
+        targetSdk = 34
         versionCode = 1
         versionName = "1.0"
 
