@@ -7,22 +7,29 @@
     tools:context=".MainActivity">
 
 
-    <TextView
-        android:id="@+id/text"
+    <FrameLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/box"
-        android:autoSizeTextType="uniform"
-        style="@style/myStyle"
+        android:paddingBottom="20dp"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:autoSizeTextType="uniform"
+            style="@style/myStyle"
 
+            android:layout_centerInParent="true"
+            android:text="Meow I\n like Potatoes" />
+
+    </FrameLayout>
+
+
+    <Switch
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         android:layout_centerInParent="true"
-        android:text="Meow I\n like Potatoes" />
-
-    <com.fro.scouting_custom_buttons.MyCustomWidget
-        android:layout_width="200dp"
-        android:layout_height="200dp"
-        android:background="@drawable/box"
-        app:custom_text="whyyyyyy"
-        />
-
+        android:scaleX="2"
+        android:thumb="@drawable/custom_thumb"
+        android:track="@drawable/custom_track" />
 </RelativeLayout>
