@@ -9,8 +9,8 @@
 
     <com.fro.scouting_custom_buttons.LovelyView
         android:id="@+id/custView"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_centerInParent="true"
         custom:labelColor="#ffff66"
         custom:rectColor="#ff0099"

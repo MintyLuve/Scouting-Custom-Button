@@ -37,19 +37,18 @@ public class LovelyView extends View {
         //draw the View
         rectPaint.setStyle(Style.FILL);
         rectPaint.setAntiAlias(true);
-
+        rectPaint.setStrokeWidth(20);
         //set the paint color using the rect color specified
         rectPaint.setColor(rectCol);
-        RectF rect = new RectF(0,0,600,600);
-        canvas.drawRoundRect(rect, 20, 20, rectPaint);
+        RectF rect = new RectF(0,0,250,250);
+        canvas.drawRoundRect(rect, 40, 40, rectPaint);
 
         //set the text color using the color specified
         rectPaint.setColor(labelCol);
         //set text properties
-        rectPaint.setTextAlign(Paint.Align.CENTER);
         rectPaint.setTextSize(50);
         //draw the text using the string attribute and chosen properties
-        canvas.drawText(rectText, 600, 600, rectPaint);
+        canvas.drawText(rectText, 200, 200, rectPaint);
 
     }
 
